@@ -1,0 +1,144 @@
+.main0{
+    width: 100%;
+height: 100vh;
+padding: 17% 0%;
+display: flex;
+justify-content: center;
+align-items: center;}
+.main{
+    width: 35%;
+    background-color: hsl(216, 12%, 8%); 
+    display: flex;
+    flex-direction: column;
+     padding: 2% 3%;
+     border-radius: 3vw;
+}
+.main h1{
+    padding: 2% 0%;
+}
+.main p{
+    padding: 2% 0%;
+    text-align: left;  
+    font-size: 1.25vw;
+    opacity: .8; 
+}
+.rate{
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 6% 0%;
+}
+.main button{
+   background-color: hsl(25, 97%, 53%);
+   border-radius: 3vw;
+   height: 3.5vw;
+   font-size: 1.25vw;    border-style: none;
+
+}
+.main button:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+.star{ 
+   border-radius: 50%;
+    background-color: hsl(213, 19%, 18%); 
+   width: 4.5vw;
+ padding: 4%;
+ margin: 2% 0% 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+.main h1{
+    font-size: 2vw;
+    font-weight: 300;
+}
+.main h3{
+    border-radius: 50%;
+   width: 5vw;
+  height: 5vw;
+  font-size: 1.25vw;
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.main h3:hover{
+    background-color: hsl(25, 97%, 53%) !important;
+    color: #fff;
+}
+ 
+.thankYou{
+   width: 35%;
+    background-color: hsl(216, 12%, 8%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding: 2.25%;
+     border-radius: 3vw;
+     gap: 1.5vw;
+}
+.submit{
+    width: 50%;
+}
+.thankYou h2{
+    background-color: hsl(213, 19%, 18%); 
+    color:hsl(25, 97%, 53%);
+    width: 50%;
+    border-radius: 3vw;
+    font-size: 1vw;
+    font-weight: 400;
+    height: 3vw;
+    justify-content: center;
+    align-items: center;
+display:flex;
+}
+.thankYou h1{
+    color: #fff;
+    font-size: 2vw;
+}
+.thankYou p{
+    color: #fff;
+    opacity: .8;
+    font-size: 1.25vw;
+    text-align: center;
+}
+
+@media (width<=375px){
+    .main{
+        width: 85%;
+        padding:6%;
+    }
+.main p{ 
+    font-size: 4.25vw; 
+}
+.main button{ 
+   height: 10vw;
+   font-size: 4.5vw; 
+   border-radius: 5vw;
+}
+.star{width: 10.5vw;}
+.main h1{
+    font-size: 6vw;
+}
+.main h3{
+    width: 11vw;
+    height: 11vw;
+    font-size:4.5vw;
+}
+.thankYou{
+    width: 85%;
+    padding: 6%;
+    gap: 3vw;
+}
+.thankYou h2{
+    height: 6vw;
+    width: 60%;
+    font-size: 3vw;
+}
+.thankYou h1{
+   font-size: 7vw;
+}
+.thankYou p{
+    font-size: 4.25vw;
+}
+}

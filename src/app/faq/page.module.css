@@ -1,0 +1,52 @@
+.main{
+background-color: hsl(275, 100%, 97%);
+height: 100vh;
+color:hsl(292, 42%, 14%); 
+position: relative;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.dataDiv{
+display: flex;
+flex-direction: column;
+width: 40%;
+border-radius: 2.5vw;
+padding: 2% 3%;
+background-color:hsl(0, 0%, 100%);
+gap: 2vw;
+z-index: 10;
+}
+.mainHeading{
+    display: inline-flex;
+    gap: 5%;
+}
+.qa{
+    display: flex;
+    text-align: left;
+    } 
+.qa button{
+    height: 1.75vw;
+    justify-content: space-between;
+    width: 100%;
+    display: inline-flex;
+ align-items: center;
+background-color:hsl(0, 0%, 100%);
+border-style: none;
+color:hsl(292, 42%, 14%);
+text-align: left;
+font-size: 1.25vw;
+}
+.qa button:hover{
+    cursor: pointer;
+}
+.qa p{display: none;}
+.bgd{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1; 
+}
+.bgm{
+    display: none;
+}

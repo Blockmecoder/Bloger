@@ -1,0 +1,21 @@
+.Login{ 
+    width: 100%; 
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login form{
+    background-color: blue;
+  display: flex;
+  flex-direction: column;
+  padding: 4% 2%; 
+}
+.Login form input{
+    margin: 2% 0%;
+    height: 2%;
+}
+.Login form button{
+    margin: 2% 0%;
+    height: 2%;
+}
