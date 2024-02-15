@@ -11,8 +11,8 @@ const Footer = () => {
         <Image
           src={logo}
           className={styles.logo}
-          width={100} 
-          // style={{height:'auto'}}
+          width={3000}
+          // style={{ height: "auto" }}
         />
         <div className={styles.slideDiv}>
           <label>Product</label>

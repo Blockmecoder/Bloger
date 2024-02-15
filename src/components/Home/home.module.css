@@ -6,7 +6,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 100%; 
+text-align: center;
 gap: 1vw;
+height: 25vw;
 padding: 0% 0% 5%;
 border-bottom-left-radius: 5vw;
 background: linear-gradient(to right,#ff8f70,#ff3d54);
@@ -20,14 +22,14 @@ background: linear-gradient(to right,#ff8f70,#ff3d54);
 }
 .hero h3{
     font-size: 1.5vw;
-    font-weight: 500;
+    font-weight: 300;
 }
 .links{
     display: inline-flex;
     padding: 2% 0%;
     justify-content: center;
     align-items: center;
-    gap: 1%; 
+    gap: 1vw; 
 }
 .links *{
     display: flex;
@@ -48,14 +50,16 @@ border-radius: 2.5vw;
     color: #fff;
 }
 .pattern{ 
-    position: absolute;
-    width: 180%;
-    z-index:1;
-    left: 70%;
-    top: 32%;
-    transform: translate3d(-50%,-50%,0);
+   position: relative;
+  width: 100%;
+  scale: 1.85;
+  z-index: 1;
+  left: 20vw;
+  top: -65vw;
 }
-
+.patternm{
+display: none;
+}
 .future{
     display:flex;
     flex-direction: column; 
@@ -70,11 +74,16 @@ border-radius: 2.5vw;
     display: inline-flex;
  justify-content: space-between;
 }
+.future h1{
+    font-size: 3.75vw;
+    font-weight: 500;
+}
 .mainData{
     display: flex;
     flex-direction: column;
     gap: 2vw;
     width: 45%;
+    color: #1f3f5b;
     padding: 5% 0% 0%;
 }
 .mainData h3{
@@ -90,6 +99,9 @@ border-radius: 2.5vw;
     width: 50%;
     transform: translate3d(27%,-8%,0);
 }
+.graphm{
+    display: none;
+}
 .mobile{
     display: inline-flex;
     justify-content: space-between;
@@ -102,36 +114,204 @@ border-radius: 2.5vw;
 }
 .mobiles{
     width: 100%;
-    margin-bottom: -10%;
-    transform: translateY(-10%); 
+     transform: translateY(4%); 
     z-index: 5;
+    scale: 1.3;
 }
 .mobile div{
     display: flex;
-    flex-direction: column;
-    padding: 0 8%;
- gap:2vw; 
+    flex-direction: column; 
+    gap:2vw; 
+    transform: translateX(-5vw);
 }
 .circle{
-    position: relative;
-    top:0%;
-    margin:-32%;
-    left: -32%;
-    z-index: 1;
-    width: 150%;
+  position: relative;
+  top: -10vw;
+  left: -29vw;
+  width: 100%;
+  z-index: 1;
+  scale: 2.25;
 }
 .mobile div h3{
-    font-size: 2.75vw;
+    font-size: 2.5vw;
     font-weight: 400;
 }
 .mobile div p{
     font-size: 1.2vw;
     font-weight: 400;
 }
-.laptop{
-    display: inline-flex;
-    padding: 7%;
+.laptops{
+    width: 100%;
+    display: inline-flex; 
+    padding:15% 7%;
     position: relative;
     z-index: 4;
     background-color: #fff;
+}
+.laptop{
+    width: 100%;
+    transform: translateX(-15vw);
+  scale: 1.25;
+}
+.laptopm{
+    display: none;
+}
+.mainData2{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 80%;
+    color: #1f3f5b;
+    padding: 10% 0% 0%; 
+}
+.mainData2 h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.mainData2 p{
+    font-size: 1.2vw;
+    font-weight: 400; 
+    margin-bottom: 2vw;
+}
+
+
+@media (width<=464px){
+.pattern{
+    display: none;
+}
+    .patternm{
+        display: block;
+        width: 100%;
+  scale: 4;
+  z-index: 1;
+  left: 40vw;
+  top: -65vw;
+  position: relative; 
+    }
+    .hero{
+        padding:10vw 8%;
+        gap: 5vw;
+        height: 100vw;
+       border-bottom-left-radius: 25vw;
+    }
+    /* .hero::before{
+        content: '';
+        height: 40vw;
+        width: 40vw;
+        
+       border-top-right-radius: 25vw;
+        background-color: #fff;
+        z-index: 100;
+    } */
+    .hero h1{ 
+    font-size: 9vw; 
+}
+.hero h3{
+    font-size: 5vw;  
+}
+.links{
+    padding: 10vw 0 0;
+    width: 95%;
+    gap:5vw;
+}
+.links *{
+    width: 100vw;
+    height: 12vw;
+    font-size: 4.5vw; 
+    font-weight: 500;
+}
+.links :first-child{
+background-color: #fff;
+color:#ff3d54; 
+border-radius: 10vw;
+}
+.links :last-child{
+background-color: #ff3d54;
+border: 0.25vw solid #fff;
+color:#fff; 
+border-radius: 10vw;
+}
+.future{
+    padding: 10vw 8% 65vw; 
+    text-align: center; 
+    gap: 5vw;
+}
+.mainData{
+    width: 95%;
+    gap: 4vw;
+}
+.mainFuture{
+    flex-direction: column-reverse;
+}
+.graph{
+    display: none;
+}
+.graphm{
+    display: flex;
+    width: 100%;
+}
+.future h1{
+    font-size: 7vw;
+}
+.future h3{
+    font-size:7vw;
+}
+.future p{
+    font-size:4.5vw;
+    margin-bottom: 5vw;
+}
+.mobile{ 
+    flex-direction: column; 
+    padding: 10vw 8%;
+    justify-content: flex-start;
+     border-bottom-left-radius: 15vw;
+    border-top-right-radius: 15vw;
+}
+.circle{ 
+    position: absolute;
+ top: 410vw;
+ left: 0;
+}
+.mobiles{ 
+     transform: translateY(-35vw);  
+}
+
+.mobile div{
+    gap: 5vw; 
+    text-align: center;
+     transform: translateY(-10vw);
+     transform: translateX(0vw); 
+    z-index: 5;
+}
+.mobile div h3{
+font-size: 7vw;
+}
+.mobile div p{
+font-size: 4vw;
+}
+
+.laptops{ 
+flex-direction: column;
+padding:10vw 5%;
+gap:5vw;
+}
+.laptop{
+    display: none;
+}
+.laptopm{
+    display: flex;
+    width: 100%;
+    scale: 1.25;
+}
+.mainData2{ 
+    gap: 5vw;
+    width: 100%; 
+    text-align: center;
+}
+.mainData2 h3{
+    font-size:7vw ;
+}
+.mainData2 p{
+    font-size: 4vw;
+}
 }

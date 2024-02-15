@@ -1,17 +1,15 @@
 .main{
     width: 100%;
-    color: hsl(240, 2%, 79%);
-    /* display:flex; */
-    /* justify-content: center; */
-    background-color:  hsl(240, 10%, 16%);
-    /* flex-direction: column; */
-    border-top-right-radius: 5vw;
+    color: hsl(240, 2%, 79%); 
+    background-color:  #fff; 
 }
 .data{ 
     width: 100%;
     display:inline-flex;
     padding: 5% 4%;
+    border-top-right-radius: 5vw;
     justify-content: space-around; 
+    background-color:  hsl(240, 10%, 16%);
 }
 .logo{
 width: 10vw;
@@ -26,15 +24,41 @@ height: 4vw;
 .slideDiv label{
     font-size: 1.5vw; 
 }
+.slideDiv ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75vw;
+}
 .slideDiv li{
     list-style: none;
-    font-size: 1.25vw; 
-    margin: 0% 0% 0.75vw;
+    font-size: 1.25vw;  
 }
 .slideDiv li:hover{ 
     text-decoration: underline;
 }
 
-@media (width<=375px){
+@media (max-width:464px){
+.data{
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+    text-align: center;
+}
+.slideDiv ul{ 
+    gap: 2.5vw;
+}
+.logo{
+    width: 25vw;
+  height: 10vw;
+}
+    .slideDiv label{
+    font-size: 5vw; 
+}
+.slideDiv{
+    gap: 5vw;
+}
 
+.slideDiv li{
+    font-size: 3.5vw; 
+}
 }

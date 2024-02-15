@@ -2,9 +2,9 @@ import Image from 'next/image'
 import React from 'react'
 import styles from "./page.module.css"; 
 import logo from "../../../public/home/logo.png";
-import arrow from "../../../public/home/arrow.png";
-import arrow2 from "../../../public/home/arrow2.png";
+import arrow from "../../../public/home/arrow2.png";
 import Link from 'next/link';
+import Ham from './Ham/Ham';
 
 const NavBar = () => {
   return (
@@ -24,8 +24,8 @@ const NavBar = () => {
                 className={styles.arrow}
                 src={arrow}
                 style={{ height: "auto" }}
-                width={10}
-              />
+                width={3000}
+              /> 
             </label>
             <ul>
               <li>
@@ -53,7 +53,7 @@ const NavBar = () => {
                 className={styles.arrow}
                 src={arrow}
                 style={{ height: "auto" }}
-                width={10}
+                width={2000}
               />
             </label>
             <ul>
@@ -79,7 +79,7 @@ const NavBar = () => {
                 className={styles.arrow}
                 src={arrow}
                 style={{ height: "auto" }}
-                width={10}
+                width={2000}
               />
             </label>
             <ul>
@@ -104,6 +104,8 @@ const NavBar = () => {
           Sign Up
         </Link>
       </div>
+
+      <Ham/>
     </div>
   );
 }

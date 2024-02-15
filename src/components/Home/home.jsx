@@ -1,10 +1,8 @@
 import React from "react";
 import NavBar from "../NavBar/page";
 import circle from "../../../public/home/circle.png";
-import cross from "../../../public/home/cross.png";
 import graph from "../../../public/home/graph.png";
 import graphm from "../../../public/home/graphm.png";
-import hamburger from "../../../public/home/hamburger.png";
 import laptop from "../../../public/home/laptop.png";
 import laptopm from "../../../public/home/laptopm.png";
 import mobiles from "../../../public/home/mobiles.png";
@@ -17,13 +15,7 @@ import styles from "./home.module.css";
 const Home = () => {
   return (
     <div className={styles.main}>
-      <NavBar />
-      <Image
-        className={styles.pattern}
-        src={pattern}
-        style={{ height: "auto" }}
-        width={3000}
-      />
+      <NavBar /> 
       <div className={styles.hero}>
         <h1>A modern publishing platform</h1>
         <h3>Grow your audience and build your online brand</h3>
@@ -31,6 +23,18 @@ const Home = () => {
           <Link href="/">Start for Free</Link>
           <Link href="/">Learn More</Link>
         </div>
+        <Image
+          className={styles.pattern}
+          src={pattern}
+          style={{ height: "auto" }}
+          width={3000}
+        />
+        <Image
+          className={styles.patternm}
+          src={patternm}
+          style={{ height: "auto" }}
+          width={3000}
+        />
       </div>
       <div className={styles.future}>
         <h1>Designed for the future</h1>
@@ -57,7 +61,13 @@ const Home = () => {
             className={styles.graph}
             src={graph}
             style={{ height: "auto" }}
-            width={100}
+            width={3000}
+          />
+          <Image
+            className={styles.graphm}
+            src={graphm}
+            style={{ height: "auto" }}
+            width={3000}
           />
         </div>
       </div>
@@ -66,13 +76,13 @@ const Home = () => {
           className={styles.mobiles}
           src={mobiles}
           style={{ height: "auto" }}
-          width={100}
+          width={3000}
         />
         <Image
           className={styles.circle}
           src={circle}
           style={{ height: "auto" }}
-          width={100}
+          width={3000}
         />
         <div>
           <h3>State of the Art Infrastructure</h3>
@@ -84,17 +94,37 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <div className={styles.laptop}>
-        
+      <div className={styles.laptops}>
+        <Image
+          className={styles.laptop}
+          src={laptop}
+          style={{ height: "auto" }}
+          width={3000}
+        />
+        <Image
+          className={styles.laptopm}
+          src={laptopm}
+          style={{ height: "auto" }}
+          width={3000}
+        />
+        <div className={styles.mainData2}>
+          <h3>Free, open, simple</h3>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h3>Powerful tooling</h3>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
       </div>
-      Free, open, simple Blogr is a free and open source application backed by a
-      large community of helpful developers. It supports features such as code
-      syntax highlighting, RSS feeds, social media integration, third-party
-      commenting tools, and works seamlessly with Google Analytics. The
-      architecture is clean and is relatively easy to learn. Powerful tooling
-      Batteries included. We built a simple and straightforward CLI tool that
-      makes customization and deployment a breeze, but capable of producing even
-      the most complicated sites.
     </div>
   );
 };
