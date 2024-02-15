@@ -17,20 +17,32 @@ background-color:hsl(0, 0%, 100%);
 gap: 2vw;
 z-index: 10;
 }
+ 
 .mainHeading{
     display: inline-flex;
-    gap: 5%;
+    gap:5%;
+    font-size: 1.55vw;
+    align-items: center;
+}
+.star{
+    width: 2.75vw;
 }
 .qa{
     display: flex;
+    flex-direction: column;
     text-align: left;
     } 
+    .qa p{
+        font-size: 1vw;
+        text-align: justify;
+        padding: 2% 0 0;
+    }
 .qa button{
-    height: 1.75vw;
+    height: 2.5vw;
     justify-content: space-between;
     width: 100%;
     display: inline-flex;
- align-items: center;
+ /* align-items: center; */
 background-color:hsl(0, 0%, 100%);
 border-style: none;
 color:hsl(292, 42%, 14%);
@@ -40,7 +52,9 @@ font-size: 1.25vw;
 .qa button:hover{
     cursor: pointer;
 }
-.qa p{display: none;}
+.minus,.plus{
+    width: 2vw;
+}
 .bgd{
     width: 100%;
     position: absolute;
@@ -49,4 +63,34 @@ font-size: 1.25vw;
 }
 .bgm{
     display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+@media (width<=460px){
+    .bgd{display: none;}
+    .bgm{display: flex;}
+    .dataDiv{
+        width: 85%;
+        padding:8% 5%;
+        gap: 6vw;
+    }
+    .mainHeading{
+        font-size: 5vw;
+    }
+    .star{
+        width: 6vw;
+    }
+    .qa p{
+        font-size: 3.75vw;
+    }
+    .qa button{
+        font-size: 4.25vw;
+        height: 10vw;
+    }
+    .minus,.plus{
+        width: 5vw;
+    }
 }

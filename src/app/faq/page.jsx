@@ -1,17 +1,13 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import styles from "./page.module.css";
-import bgd from "../../../public/faq/bg-d.svg";
-import bgm from "../../../public/faq/bg-m.svg";
-import minus from "../../../public/faq/minus.svg";
-import plus from "../../../public/faq/plus.svg";
-import star from "../../../public/faq/star.svg";
+import bgd from "../../../public/faq/bg-d.png";
+import bgm from "../../../public/faq/bg-m.png";
+import minus from "../../../public/faq/minus.png";
+import plus from "../../../public/faq/plus.png";
+import star from "../../../public/faq/star.png";
 import Image from "next/image";
 const faq = () => {
-    const [close, setClose] = useState(true);
-    const handleClose = () => {
-        setClose(!close);
-    }
   const data = [
     {
       id: 1,
@@ -34,8 +30,12 @@ const faq = () => {
       ans: "The best place to get help is inside Frontend Mentor's Discord community,There's a help channel where you can ask questions and seek support from other community members.",
     },
   ];
-    const displayData = {
-      
+  const [isOpen, setIsOpen] = useState(Array(data.length).fill(false));
+  const toggleAnswer = (index) => {
+    const changeIsOpen = [...isOpen];
+    changeIsOpen[index] = !changeIsOpen[index];
+    console.log("New state:", changeIsOpen);
+    setIsOpen(changeIsOpen);
   };
   return (
     <div className={styles.main}>
@@ -55,7 +55,7 @@ const faq = () => {
         <div className={styles.mainHeading}>
           <Image
             src={star}
-            width={25}
+            width={40}
             style={{ height: "auto" }}
             className={styles.star}
           />
@@ -63,28 +63,23 @@ const faq = () => {
         </div>
 
         {data.map((item, index) => (
-          <div className={styles.qa} key={index}> 
-              <button onClick={handleClose}>
-                {item.que}
-                <span>
-                  {close ? (
-                    <Image
-                      src={plus}
-                      width={20}
-                      style={{ height: "auto" }}
-                      className={styles.plus}
-                    />
-                  ) : (
-                    <Image
-                      src={minus}
-                      width={20}
-                      style={{ height: "auto" }}
-                      className={styles.minus}
-                    />
-                  )}
-                </span>
-              </button> 
-            <p>{item.ans}</p>
+          <div
+            className={styles.qa}
+            onClick={() => toggleAnswer(index)}
+            key={index}
+          >
+            <button>
+              {item.que}
+              <span>
+                <Image
+                  src={isOpen[index] ? minus : plus}
+                  width={20}
+                  style={{ height: "auto" }}
+                  className={isOpen[index] ? styles.minus : styles.plus}
+                />
+              </span>
+            </button>
+            {isOpen[index] && <p>{item.ans}</p>}
           </div>
         ))}
       </div>

@@ -1,17 +1,104 @@
 .Nav{
-    width: 100%;
-    height: 8vw;
+    width: 100%; 
+    height: 17vw;
+    position: relative;
     display: inline-flex;
     justify-content: space-between;
-    padding: 2% 7%;
+    align-items: center;
+    padding: 2% 7% 5%; 
+background: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
 }
 
 .Logo{
-    width: 10%;
+    width: 10vw;
+height: 4vw; 
 }
-.data{
+
+.datalogo{
     display: inline-flex;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
+    align-items: center;    z-index: 10;
+
+}
+ .data{
+    display: inline-flex;
+    width: 70%;
+    justify-content: space-around;
     align-items: center;
+ }
+
+ 
+.slideDiv label:hover{
+    cursor: pointer;
+}
+.slideDiv label:hover .arrow{
+    transform:rotateX(180deg);
+    transition: all .4s ease-in-out;
+}
+.slideDiv ul li{ 
+    list-style: none; 
+}
+
+.arrow{
+    width: 12.5%;
+    margin: 0 0 0 3.5%;
+}
+.slideDiv{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;   
+     z-index: 15;
+    font-size: 1.35vw;
+    position: relative; 
+}
+.slideDiv:hover ul{
+    display: flex;
+    transform: translateX(0vw);
+    transition: all 0.4s ease-in-out;
+}
+.slideDiv ul{
+    display:none;
+    flex-direction: column;
+    border-radius: 5%;
+    padding:10% 5%;
+    background-color: #fff;
+    color: black;
+    width:90%;
+    position: absolute;
+    top: 1.5vw;
+    gap: 0.25vw;
+    font-size: 1.25vw;
+    transform: translateX(-5vw);
+    }
+.signin{
+    z-index: 10; 
+    width: 15%;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25vw; 
+    transform: translateX(-15vw);
+}
+ 
+.signup{
+    height: 2.75vw;
+    width: 7.25vw;
+     display: flex;     
+     justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #ff3d54;
+border-radius: 2.5vw;
+}
+.signup:hover{
+    background-color: hsl(13, 100%, 72%);
+    color: #fff;
+}
+.signin Link:hover{
+cursor: pointer;
+}
+.slideDiv li:hover{
+    text-decoration:underline;
 }

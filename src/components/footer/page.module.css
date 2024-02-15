@@ -1,0 +1,40 @@
+.main{
+    width: 100%;
+    color: hsl(240, 2%, 79%);
+    /* display:flex; */
+    /* justify-content: center; */
+    background-color:  hsl(240, 10%, 16%);
+    /* flex-direction: column; */
+    border-top-right-radius: 5vw;
+}
+.data{ 
+    width: 100%;
+    display:inline-flex;
+    padding: 5% 4%;
+    justify-content: space-around; 
+}
+.logo{
+width: 10vw;
+height: 4vw; 
+} 
+.slideDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    padding: 1.5% 0;
+}
+.slideDiv label{
+    font-size: 1.5vw; 
+}
+.slideDiv li{
+    list-style: none;
+    font-size: 1.25vw; 
+    margin: 0% 0% 0.75vw;
+}
+.slideDiv li:hover{ 
+    text-decoration: underline;
+}
+
+@media (width<=375px){
+
+}
