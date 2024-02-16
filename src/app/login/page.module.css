@@ -1,21 +1,53 @@
-.Login{ 
-    width: 100%; 
-    padding: 10%;
-    display: flex;
+.main{
+    width: 100%;
+    height: 100vh;
+     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Login form{
-    background-color: blue;
+.Login{ 
+    width: 70vw;
+    height: 30vw; 
+    padding: 10%;
+    display: flex;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #995252;
+}
+.Login h2{
+    font-size: 2vw;
+}
+.Login p{
+    font-size: 1vw;
+}
+
+.dataDiv{ 
+    width: 45%;
   display: flex;
   flex-direction: column;
   padding: 4% 2%; 
 }
-.Login form input{
-    margin: 2% 0%;
-    height: 2%;
+.formDiv{
+      display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 4% 2%; 
 }
-.Login form button{
-    margin: 2% 0%;
-    height: 2%;
+.formDiv form{
+    display: flex; 
+     flex-direction: column;
+     gap: 1vw;
 }
+.formDiv form button{ 
+    height: 4vw;
+    background-color: blueviolet;
+}
+.formDiv input{
+    height: 3vw;
+    width: 100%;
+    border-style: none;
+}
+ 

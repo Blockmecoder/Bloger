@@ -11,6 +11,7 @@ import patternm from "../../../public/home/patternm.png";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./home.module.css";
+import Footer from "../footer/page";
 
 const Home = () => {
   return (
@@ -125,6 +126,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
