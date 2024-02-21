@@ -1,53 +1,104 @@
-.main{
+ 
+.formDiv{ 
     width: 100%;
     height: 100vh;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Login{ 
-    width: 70vw;
-    height: 30vw; 
-    padding: 10%;
     display: flex;
-    border-radius: 2vw;
     justify-content: center;
-    align-items: center;
-    background-color: #995252;
+    align-items: center;   
+     background-color: #ff7a7a;
+     color: #000;
 }
-.Login h2{
-    font-size: 2vw;
-}
-.Login p{
-    font-size: 1vw;
-}
-
-.dataDiv{ 
-    width: 45%;
-  display: flex;
-  flex-direction: column;
-  padding: 4% 2%; 
-}
-.formDiv{
-      display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  padding: 4% 2%; 
+.formDiv h3{
+font-weight: 500;
+font-size: 1.8vw;
 }
 .formDiv form{
+    width: 35%;
     display: flex; 
+    align-items: center;
      flex-direction: column;
-     gap: 1vw;
+     background-color: #fff;
+     gap: 1.5vw;z-index: 100; position: relative;
+     padding: 8% 6%;
 }
-.formDiv form button{ 
-    height: 4vw;
-    background-color: blueviolet;
+.formDiv *{
+    border-radius: 0.3vw;
+    font-size: 1vw;
+    color: #000;
 }
+.submitButton{ 
+    width: 100%;
+     display: flex; 
+  justify-content: center;
+  align-items: center;
+    height: 3vw;
+    background-color: hsl(154, 59%, 51%);
+}
+.Google{ 
+     display: flex; 
+  justify-content: center;
+  align-items: center;    width: 100%;
+border: 0.1vw solid #b9b6d3;
+    height: 3vw;
+    background-color: hsl(0, 0%, 100%);
+}
+ 
+ .mob{
+    display: none;
+ }
 .formDiv input{
     height: 3vw;
     width: 100%;
+    padding:0 5%;
     border-style: none;
+    border: 0.1vw solid #b9b6d3;
+    background-color: #fff;
+}
+.desk{    
+    position: absolute;
+    top: 0%;
+    left: 0%; 
+    width: 100%;
+}
+.formDiv form p{
+    font-size: 1vw;
 }
  
+
+@media (max-width:464px){
+    .formDiv h3{font-size: 5.25vw;}
+    .formDiv form{
+width: 80%;
+gap: 2vw;
+    }
+    .formDiv *{
+    border-radius: 1vw;
+    font-size: 4vw;
+    color: #000;
+}
+.formDiv input{
+    height: 10vw; 
+    border: 0.45vw solid #b9b6d3;
+    }
+.formDiv form p{
+    font-size: 4vw;
+}
+.Google{
+    height: 10vw;
+    border: 0.45vw solid #b9b6d3
+}
+.submitButton{
+    height: 10vw;
+    border: 0.45vw solid #b9b6d3
+}
+.desk{
+    display: none;
+}
+.mob{display: block;
+     position: absolute;
+    top: 0%;
+    left: 0%; 
+    width: 100%;
+    height: 100vh;
+}
+}

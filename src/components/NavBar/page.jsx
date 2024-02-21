@@ -41,7 +41,7 @@ const NavBar = () => {
                 <Link href="/">Features</Link>
               </li>
               <li>
-                <Link href="/">Integrations</Link>
+                <Link href="/rating">Rating</Link>
               </li>
             </ul>
           </div>
@@ -64,10 +64,10 @@ const NavBar = () => {
                 <Link href="/">Team</Link>
               </li>
               <li>
-                <Link href="/">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li>
-                <Link href="/">Careers</Link>
+                <Link href="/faq">FAQ</Link>
               </li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import hamburger from "../../../../public/home/hamburger.png";
 import cross from "../../../../public/home/cross.png";
 import arrow2 from "../../../../public/home/arrow.png";
@@ -61,7 +61,7 @@ const Ham = () => {
                     <Link href="/">Features</Link>
                   </li>
                   <li>
-                    <Link href="/">Integrations</Link>
+                    <Link href="/rating">Rating</Link>
                   </li>
                 </ul><hr className={styles.hr}></hr>
                        </>  
@@ -90,7 +90,7 @@ const Ham = () => {
                     <Link href="/">Blog</Link>
                   </li>
                   <li>
-                    <Link href="/">Careers</Link>
+                    <Link href="/faq">FAQ</Link>
                   </li>
                   </ul>
                   <hr className={styles.hr}></hr>

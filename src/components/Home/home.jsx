@@ -16,7 +16,7 @@ import Footer from "../footer/page";
 const Home = () => {
   return (
     <div className={styles.main}>
-      <NavBar /> 
+      <NavBar />
       <div className={styles.hero}>
         <h1>A modern publishing platform</h1>
         <h3>Grow your audience and build your online brand</h3>
@@ -27,12 +27,14 @@ const Home = () => {
         <Image
           className={styles.pattern}
           src={pattern}
+          placeholder="blur"
           style={{ height: "auto" }}
           width={3000}
         />
         <Image
           className={styles.patternm}
           src={patternm}
+          placeholder="blur"
           style={{ height: "auto" }}
           width={3000}
         />
@@ -63,12 +65,14 @@ const Home = () => {
             src={graph}
             style={{ height: "auto" }}
             width={3000}
+            placeholder="blur"
           />
           <Image
             className={styles.graphm}
             src={graphm}
             style={{ height: "auto" }}
             width={3000}
+            placeholder="blur"
           />
         </div>
       </div>
@@ -78,12 +82,14 @@ const Home = () => {
           src={mobiles}
           style={{ height: "auto" }}
           width={3000}
+          placeholder="blur"
         />
         <Image
           className={styles.circle}
           src={circle}
           style={{ height: "auto" }}
           width={3000}
+          placeholder="blur"
         />
         <div>
           <h3>State of the Art Infrastructure</h3>
@@ -101,12 +107,14 @@ const Home = () => {
           src={laptop}
           style={{ height: "auto" }}
           width={3000}
+          placeholder="blur"
         />
         <Image
           className={styles.laptopm}
           src={laptopm}
           style={{ height: "auto" }}
           width={3000}
+          placeholder="blur"
         />
         <div className={styles.mainData2}>
           <h3>Free, open, simple</h3>
@@ -126,7 +134,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
