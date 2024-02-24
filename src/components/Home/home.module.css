@@ -280,7 +280,7 @@ font-size: 4vw;
 .laptops{ 
 display:flex;
  flex-direction: column; 
-padding:10vw 5%;
+padding:10vw 8%;
 gap:5vw;
 }
 .laptop{

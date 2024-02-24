@@ -69,7 +69,7 @@ font-size: 1.25vw;
     z-index: 1;
 }
 
-@media (width<=460px){
+@media (width<=464px){
     .bgd{display: none;}
     .bgm{display: flex;}
     .dataDiv{

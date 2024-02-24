@@ -80,7 +80,7 @@
     position: absolute;
     top: 0%;
     left: 0%; 
-    width: 100%;
+    width: 90%;
 }
 .formDiv form p{
     font-size: 1vw;
@@ -104,9 +104,8 @@
     .Login{
         padding: 40vw 0;
         flex-direction: column;
-        gap: 10vw;
-        height: auto;
-    }
+        gap: 10vw; 
+    height: 100vh;    }
        .dataDiv{ 
         width: 80%; 
         gap: 7.5vw;

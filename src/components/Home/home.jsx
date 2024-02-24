@@ -15,8 +15,7 @@ import Footer from "../footer/page";
 
 const Home = () => {
   return (
-    <div className={styles.main}>
-      <NavBar />
+    <div className={styles.main}> 
       <div className={styles.hero}>
         <h1>A modern publishing platform</h1>
         <h3>Grow your audience and build your online brand</h3>
@@ -133,8 +132,7 @@ const Home = () => {
             producing even the most complicated sites.
           </p>
         </div>
-      </div>
-      <Footer />
+      </div> 
     </div>
   );
 };

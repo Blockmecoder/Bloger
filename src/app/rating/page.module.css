@@ -103,7 +103,7 @@ display:flex;
     text-align: center;
 }
 
-@media (width<=375px){
+@media (width<=464px){
     .main{
         width: 85%;
         padding:6%;

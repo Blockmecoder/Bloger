@@ -41,13 +41,13 @@ const faq = () => {
     <div className={styles.main}>
       <Image
         src={bgd}
-        width={500}
+        width={3000}
         style={{ height: "auto" }}
         className={styles.bgd}
       />
       <Image
         src={bgm}
-        width={100}
+        width={1000}
         style={{ height: "auto" }}
         className={styles.bgm}
       />
@@ -55,7 +55,7 @@ const faq = () => {
         <div className={styles.mainHeading}>
           <Image
             src={star}
-            width={40}
+            width={400}
             style={{ height: "auto" }}
             className={styles.star}
           />
@@ -73,7 +73,7 @@ const faq = () => {
               <span>
                 <Image
                   src={isOpen[index] ? minus : plus}
-                  width={20}
+                  width={100}
                   style={{ height: "auto" }}
                   className={isOpen[index] ? styles.minus : styles.plus}
                 />
