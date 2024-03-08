@@ -18,19 +18,19 @@ const Footer = () => {
           <label>Product</label>
           <ul>
             <li>
-              <Link href="/">Overview</Link>
+              <Link href="/overview">Overview</Link>
             </li>
             <li>
-              <Link href="/">Pricing</Link>
+              <Link href="/pricing">Pricing</Link>
             </li>
             <li>
-              <Link href="/">Marketplace</Link>
+              <Link href="/card">Marketplace</Link>
             </li>
             <li>
-              <Link href="/">Features</Link>
+              <Link href="/features">Features</Link>
             </li>
             <li>
-              <Link href="/">Integrations</Link>
+              <Link href="/rating">Rating</Link>
             </li>
           </ul>
         </div>
@@ -39,16 +39,16 @@ const Footer = () => {
           <label>Company</label>
           <ul>
             <li>
-              <Link href="/">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <Link href="/">Team</Link>
+              <Link href="/team">Team</Link>
             </li>
             <li>
-              <Link href="/">Blog</Link>
+              <Link href="/blog">Blog</Link>
             </li>
             <li>
-              <Link href="/">Careers</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
           </ul>
         </div>

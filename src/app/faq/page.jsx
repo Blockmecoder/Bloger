@@ -1,4 +1,6 @@
 "use client";
+import NavBar from "@/components/NavBar/page";
+import Footer from "@/components/footer/page";
 import React, { useState } from "react";
 import styles from "./page.module.css";
 import bgd from "../../../public/faq/bg-d.png";

@@ -10,12 +10,14 @@ const NavBar = () => {
   return (
     <div className={styles.Nav}>
       <div className={styles.datalogo}>
-        <Image
-          src={logo}
-          className={styles.logo}
-          style={{ height: "auto" }}
-          width={100}
-        />
+        <Link href="/">
+          <Image
+            src={logo}
+            className={styles.logo}
+            style={{ height: "auto" }}
+            width={200}
+          />
+        </Link>
         <div className={styles.data}>
           <div className={styles.slideDiv}>
             <label>
@@ -25,20 +27,20 @@ const NavBar = () => {
                 src={arrow}
                 style={{ height: "auto" }}
                 width={3000}
-              /> 
+              />
             </label>
             <ul>
               <li>
-                <Link href="/">Overview</Link>
+                <Link href="/overview">Overview</Link>
               </li>
               <li>
-                <Link href="/">Pricing</Link>
+                <Link href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link href="/">Marketplace</Link>
+                <Link href="/card">Marketplace</Link>
               </li>
               <li>
-                <Link href="/">Features</Link>
+                <Link href="/features">Features</Link>
               </li>
               <li>
                 <Link href="/rating">Rating</Link>
@@ -58,10 +60,10 @@ const NavBar = () => {
             </label>
             <ul>
               <li>
-                <Link href="/">About</Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/">Team</Link>
+                <Link href="/team">Team</Link>
               </li>
               <li>
                 <Link href="/blog">Blog</Link>
@@ -105,7 +107,7 @@ const NavBar = () => {
         </Link>
       </div>
 
-      <Ham/>
+      <Ham />
     </div>
   );
 }

@@ -47,24 +47,25 @@ const Ham = () => {
               </label>
               {onNav[0] && (
                 <>
-                <ul>
-                  <li>
-                    <Link href="/">Overview</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Pricing</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Marketplace</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Features</Link>
-                  </li>
-                  <li>
-                    <Link href="/rating">Rating</Link>
-                  </li>
-                </ul><hr className={styles.hr}></hr>
-                       </>  
+                  <ul>
+                    <li>
+                      <Link href="/overview">Overview</Link>
+                    </li>
+                    <li>
+                      <Link href="/pricing">Pricing</Link>
+                    </li>
+                    <li>
+                      <Link href="/card">Marketplace</Link>
+                    </li>
+                    <li>
+                      <Link href="/features">Features</Link>
+                    </li>
+                    <li>
+                      <Link href="/rating">Rating</Link>
+                    </li>
+                  </ul>
+                  <hr className={styles.hr}></hr>
+                </>
               )}
             </div>
             <div className={styles.dataDiv}>
@@ -79,22 +80,22 @@ const Ham = () => {
               </label>
               {onNav[1] && (
                 <>
-                <ul>
-                  <li>
-                    <Link href="/">About</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Team</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Blog</Link>
-                  </li>
-                  <li>
-                    <Link href="/faq">FAQ</Link>
-                  </li>
+                  <ul>
+                    <li>
+                      <Link href="/about">About</Link>
+                    </li>
+                    <li>
+                      <Link href="/team">Team</Link>
+                    </li>
+                    <li>
+                      <Link href="/Blog">Blog</Link>
+                    </li>
+                    <li>
+                      <Link href="/faq">FAQ</Link>
+                    </li>
                   </ul>
                   <hr className={styles.hr}></hr>
-                       </>       
+                </>
               )}
             </div>
             <div className={styles.dataDiv}>
@@ -109,19 +110,19 @@ const Ham = () => {
               </label>
               {onNav[2] && (
                 <>
-                <ul>
-                  <li>
-                    <Link href="/">Contact</Link>
-                  </li>
-                  <li>
-                    <Link href="/">Newsletter</Link>
-                  </li>
-                  <li>
-                    <Link href="/">LinkedIn</Link>
-                  </li>
-                </ul>
-                <hr className={styles.hr}></hr>
-                       </>  
+                  <ul>
+                    <li>
+                      <Link href="/">Contact</Link>
+                    </li>
+                    <li>
+                      <Link href="/">Newsletter</Link>
+                    </li>
+                    <li>
+                      <Link href="/">LinkedIn</Link>
+                    </li>
+                  </ul>
+                  <hr className={styles.hr}></hr>
+                </>
               )}
             </div>
             <div className={styles.signinm}>

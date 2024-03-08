@@ -1,0 +1,115 @@
+ 
+
+.main{  
+    margin: 2.5vw;
+    padding: 1.5vw 1vw;
+    width: 25%;
+    border-radius: 1.75vw; 
+    border: 1.75px solid #121212;
+    color: #121212;
+    background-color:  #fff;
+   box-shadow: 0.65vw 1.5vw 2vw .2vw #121212;
+}
+.main:hover{
+    scale: 1.015;
+     transition: all 0.5s ease-in-out;
+}
+.cardBg{ 
+    border-radius: 1vw;  
+    width: 100%;
+}
+.main p{
+color: #808080;
+font-size: 1vw; 
+ margin: 0vw 0 1.65vw; 
+}
+.main h4{
+    font-weight: 800;
+    margin: 1.25vw 0 0.65vw;
+    cursor: pointer;
+}
+.main h2{ font-size: 1.55vw; 
+    margin: 1vw 0 0.65vw; 
+}
+.main h3{ 
+    font-size: 0.9vw;
+}
+.main h4:hover{
+    scale: 1.1;
+    background: linear-gradient(to right, #ff3d54, #ff8f70);
+    transition: all 0.75s ease-in-out;
+}
+ 
+.main h2:hover{  
+    color: #ff3d54;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+ 
+ 
+.main h4{
+    font-size: 1.25vw; 
+    font-weight: 800;
+    width: 35%;
+    border-radius: 0.25vw;
+    background:linear-gradient(to right,#ff8f70,#ff3d54) ;
+    padding: 0.5vw;
+        text-align: center;
+}
+.prof{ 
+    width: 25%;
+}
+.profDiv{
+    display: flex;
+    align-items: center; 
+    gap: 1vw;
+    font-weight: 800;
+}
+@media (max-width:464px){
+.main{
+     margin: 4.5vw;
+    padding: 3.5vw 3vw;
+    width: 85%;
+    border-radius: 4.75vw; 
+    border: 1.75px solid #121212;
+    color: #121212;
+    background-color:  #fff;
+   box-shadow: 2.5vw 2.5vw #000000;
+}
+.cardBg{ 
+    border-radius: 3vw; 
+}
+.main p{ 
+    font-size: 4.5vw;
+ margin: 0vw 0 3.65vw; 
+}
+.main h4{
+    font-size: 4.5vw;
+    font-weight: 800;
+    margin: 3.25vw 0 2.65vw;
+    cursor: pointer;
+}
+.main h2{ 
+    font-size:6.5vw;
+    margin: 3vw 0 2.65vw; 
+}
+.main h3{ 
+    font-size: 3.9vw;
+}
+ 
+.main h4{
+    font-size: 4vw; 
+    font-weight: 800;
+    width: 40%;
+    border-radius:1.5vw;
+    background:linear-gradient(to right,#ff8f70,#ff3d54) ;
+    padding: 2vw;
+
+}
+.profDiv{
+    display: flex;
+    align-items: center; 
+    gap: 3.5vw;
+    font-weight: 800;
+}
+}

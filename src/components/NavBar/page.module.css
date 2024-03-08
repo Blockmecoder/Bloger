@@ -5,13 +5,13 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 7% 5%; 
+    padding: 2% 9% 5%; 
 background: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
 }
 
 .logo{
    width: 100%;
-  scale: 0.7;
+  scale: 1.2;
 }
 .HamDiv{
     display: none;
@@ -83,7 +83,7 @@ background: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
     align-items: center;
     justify-content: space-between;
     font-size: 1.25vw; 
-    transform: translateX(-15vw);
+    transform: translateX(-12vw);
 }
  
 .signup{
