@@ -1,8 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import styles from "./page.module.css";
-import mob from "../../../public/login/mob.png";
-import desk from "../../../public/login/desk.png";
+import styles from "./page.module.css"; 
 import Image from "next/image";
 import Link from "next/link";
 const SignUp = () => {
@@ -92,7 +90,7 @@ const SignUp = () => {
           </p>
         </form>
       </div>
-      <Image
+      {/* <Image
         className={styles.mob}
         src={mob}
         style={{ height: "auto" }}
@@ -105,7 +103,7 @@ const SignUp = () => {
         style={{ height: "auto" }}
         width={1000}
         placeholder="blur"
-      />
+      /> */}
     </div>
   );
 };
