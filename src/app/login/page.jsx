@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import styles from "./page.module.css";
-import mob from "../../../public/login/mob.png";
-import desk from "../../../public/login/desk.png";
+import styles from "./page.module.css"; 
 import Image from "next/image";
 import Link from "next/link";
 const Login = () => {
@@ -59,20 +57,7 @@ const Login = () => {
           Sign in with Google
         </Link>
       </form>
-      <Image
-        className={styles.mob}
-        src={mob}
-        style={{ height: "auto" }}
-        width={3000}
-        placeholder="blur"
-      />
-      <Image
-        className={styles.desk}
-        src={desk}
-        style={{ height: "auto" }}
-        width={1000}
-        placeholder="blur"
-      />
+      
     </div>
   );
 };

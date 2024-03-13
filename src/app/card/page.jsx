@@ -88,10 +88,8 @@ const page = () => {
 
   const [option, setOption ] = useState("Learning");
   const completted = (e) => {
-    const val = e.target.value;
-    console.log(val);
-    setOption(val);
-     console.log(option);
+    const val = e.target.value; 
+    setOption(val); 
   }
 
   return (

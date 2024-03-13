@@ -74,7 +74,7 @@ font-size: 1vw;
     border: 1.75px solid #121212;
     color: #121212;
     background-color:  #fff;
-   box-shadow: 2.5vw 2.5vw #000000;
+   box-shadow:2.65vw 2.5vw 3vw .3vw #121212;
 }
 .cardBg{ 
     border-radius: 3vw; 

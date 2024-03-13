@@ -1,12 +1,14 @@
 .Nav{
     width: 100%; 
+    position:sticky;
+    z-index: 10;
     height: 17vw;
     position: relative;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 9% 5%; 
-background: linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+background: linear-gradient(to right,hsl(13, 100%, 72%),#ff3d54);
 }
 
 .logo{
@@ -109,7 +111,7 @@ cursor: pointer;
 
 @media (width<=464px){
 .Nav{
-    padding: 5%;
+    padding: 5% 10%;
     height: auto;
 }
 .arrow2{
@@ -128,7 +130,7 @@ cursor: pointer;
 }
 .signin{display: none;}
 .HamDiv{
-    display: flex;
+    display: flex; 
 }
 .Ham{ 
     width: 100%;
@@ -142,7 +144,7 @@ cursor: pointer;
     position: absolute;
     top: 20vw;
     width: 90%; 
-    z-index: 100;
+    z-index: 1000;
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
@@ -161,7 +163,7 @@ align-items: center;
 gap: 3vw;
 }
 .logo{
-    scale:0.5;
+    scale:1.25;
 }
 .dataDiv label{
 display: inline-flex;

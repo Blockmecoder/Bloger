@@ -22,3 +22,20 @@
 .mainData option{
     padding:1.5% 2%;
 }
+ 
+@media (max-width:464px){
+    .mainData{ 
+    padding:9%;
+     
+}
+    .mainData select{
+   font-size: 3.25vw;
+    width: 35%;
+    height: 8.5vw;
+    border-radius: 2.65vw;
+    text-align: center;
+   box-shadow: 1.25vw 2vw 3.5vw 0.05vw #121212;
+}
+
+
+}
